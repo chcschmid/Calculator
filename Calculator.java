@@ -50,8 +50,8 @@ public class Calculator {
 	 */
 	public void multiply (int value) {
 		total = total * value;
-
-		output = output + " x " + value;}
+		output = output + " x " + value;
+	}
 	
 	/**
 	 * divide will simply divide the value that is inputed in the method signature.
