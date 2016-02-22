@@ -7,6 +7,7 @@ package cse360assign3;
 public class Calculator {
 	
 	private int total;
+	private String output = "0";
 	
 	/**
 	 * Create a Calculator object and set to total value to 0
@@ -31,6 +32,7 @@ public class Calculator {
 	 */
 	public void add (int value) {
 		total = total + value;
+		output = output + " + " + value;
 	}
 	
 	/**
@@ -39,6 +41,7 @@ public class Calculator {
 	 */
 	public void subtract (int value) {
 		total = total - value;
+		output = output + " - " + value;
 	}
 	
 	/**
@@ -47,7 +50,8 @@ public class Calculator {
 	 */
 	public void multiply (int value) {
 		total = total * value;
-	}
+
+		output = output + " x " + value;}
 	
 	/**
 	 * divide will simply divide the value that is inputed in the method signature.
@@ -60,6 +64,7 @@ public class Calculator {
 		else {
 			total = 0;
 		}
+		output = output + " / " + value;
 	}
 	
 	/**
@@ -67,7 +72,7 @@ public class Calculator {
 	 * @return will return the calculation history.
 	 */
 	public String getHistory () {
-		return "";
+		return output;
 	}
 
 }
