@@ -47,6 +47,8 @@ public class CalculatorTest {
 		test.add(5);
 		test.divide(2);
 		assertEquals(2, test.getTotal());
+		test.divide(0);
+		assertEquals(0, test.getTotal());
 	}
 
 	@Test
